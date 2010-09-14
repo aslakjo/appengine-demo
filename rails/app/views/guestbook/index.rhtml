@@ -1,0 +1,15 @@
+<ol>
+  <% @posts.each do |post| %>
+    <li>
+      <%= post.message %>
+    </li>
+  <% end %>
+</ol>
+
+<% form_tag "/guestbook/sign", :method => :post  do  %>
+
+<%= label_tag(:message, "Signer gjesteboka:") %>
+<%= text_field_tag(:message) %>
+<%= submit_tag("Signer!") %>
+
+<% end %>
