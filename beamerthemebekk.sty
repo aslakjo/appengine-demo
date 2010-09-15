@@ -1,0 +1,69 @@
+\mode<presentation>
+
+\fontencoding{T1}
+\fontfamily{cmss}
+\fontseries{m}
+\fontsize{20}{25}
+\selectfont
+
+
+
+\usecolortheme{bekk}
+
+\setbeamerfont{author}{size=\large}
+\setbeamerfont{date}{size=\large}
+\setbeamerfont{example text}{series=\bfseries}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamerfont{framesubtitle}{series=\mdseries,size=\large}
+\setbeamerfont{section}{series=\bfseries}
+\setbeamerfont{title}{series=\bfseries}
+
+\setbeamertemplate{navigation symbols}{}
+
+\beamertemplatesolidbackgroundcolor{BEKKhvit}
+
+
+\setlength{\footheight}{1em}
+\setlength{\footskip}{0.1in}
+\usefoottemplate{\vbox{
+	\insertshorttitle
+	\hfill
+	\insertframenumber
+	
+}}
+
+\defbeamertemplate*{title page}{}[1][]
+{
+  \vbox{}
+  \vfill
+  \begin{centering}
+    \begin{beamercolorbox}[sep=40pt,center,#1]{title}
+    \end{beamercolorbox}%
+    \vskip1em\par
+  \end{centering}
+
+  \begin{flushleft}
+    \begin{beamercolorbox}[sep=20pt,left,#1]{BEKKhvit}
+    \usebeamerfont{title}\inserttitle
+    \end{beamercolorbox}
+ 
+    \noindent{.\dotfill{}.\par}
+
+    \ifx\insertsubtitle\@empty%
+    \else%
+      {\insertsubtitle\par}%
+    \fi%
+    \insertdate 
+  \end{flushleft}
+  \vfill
+}
+
+\renewcommand{frametitle}{default}[1][left]
+{
+    \usebeamerfont{frametitle}
+    \insertframetitle\par
+}
+
+
+
+\mode<all>
