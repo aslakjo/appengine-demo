@@ -1,0 +1,14 @@
+#{set title:'guestbook' /}
+
+
+<ul>
+%{for(post in posts){ }%
+    <li>${post.message}</li>
+%{}}%
+</ul>
+        
+<form action="@{Guestbook.sign()}" method="post">
+    <label for="message">Message</label>
+    <input name="message" type="text"/>
+    <input type="submit" value="Sign"/>
+</form>
