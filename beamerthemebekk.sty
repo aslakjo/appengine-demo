@@ -1,8 +1,10 @@
 \mode<presentation>
 
-\fontencoding{T1}
-\fontfamily{cmss}
-\fontseries{m}
+\usepackage[T1]{fontenc}
+\usepackage{winfonts}
+\renewcommand{\rmdefault}{georgia}
+\renewcommand{\sfdefault}{georgia}
+\renewcommand{\ttdefault}{georgia}
 \fontsize{20}{25}
 \selectfont
 
@@ -21,6 +23,7 @@
 \setbeamertemplate{navigation symbols}{}
 
 \beamertemplatesolidbackgroundcolor{BEKKhvit}
+
 
 
 \setlength{\footheight}{1em}
@@ -58,10 +61,13 @@
   \vfill
 }
 
-\renewcommand{frametitle}{default}[1][left]
+\setbeamertemplate{frametitle}
 {
-    \usebeamerfont{frametitle}
-    \insertframetitle\par
+	\vspace{10pt}
+	\usebeamercolor[bg]{BEKKmorkbrun}
+	\usebeamerfont{title}\textbf{\insertframetitle}
+	\vspace{1in}
+	\rule{\textwidth}{1pt}
 }
 
 
