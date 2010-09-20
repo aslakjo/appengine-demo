@@ -10,6 +10,7 @@ h3. ruby
 
 bin mappen til gem/bin (på ubuntu: /var/lib/gems/1.8/bin/
 satt GAE_PATH miljøvariabel til appengine-java-sdk
+installert google-appengine gem i tillegg til app gemer (tip bundler)
 
 h3. java-servlet
 
