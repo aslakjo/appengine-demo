@@ -1,0 +1,14 @@
+h1. Appengine demo
+
+For å kjøre ha følgende på pathen
+h3. play
+Play versjon: 1.0.3.2
+
+h3. ruby
+bin mappen til gem/bin (på ubuntu: /var/lib/gems/1.8/bin/
+satt GAE_PATH miljøvariabel til appengine-java-sdk
+
+h3. java-servlet
+installert ant og satt opp path til appenine-java-sdk i build.xml
+
+
