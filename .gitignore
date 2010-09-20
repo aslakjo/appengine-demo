@@ -1,2 +1,7 @@
 *.iml
 nbproject/
+.idea/java-servlet/www/
+play-java/guestbook/precompiled/
+rails/WEB-INF/appengine-generated/datastore-indexes-auto.xml
+rails/WEB-INF/appengine-generated/local_db.bin
+
